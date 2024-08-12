@@ -1,6 +1,11 @@
 import Posts from '@/components/posts';
 import { getPosts } from '@/lib/posts';
 
+export const metadata = {
+  title: 'Latest posts',
+  description: 'These are the latest posts.',
+}
+
 export default async function FeedPage() {
   const posts = await getPosts();
   return (
