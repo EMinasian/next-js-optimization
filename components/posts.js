@@ -15,7 +15,7 @@ function Post({ post, action }) {
   return (
     <article className="post">
       <div className="post-image">
-        <Image loader={imageLoader} src={post.image} alt={post.title} fill quality={50}/>
+        <Image loader={imageLoader} src={post.image} alt={post.title} quality={50} width={200} height={150}/>
       </div>
       <div className="post-content">
         <header>
